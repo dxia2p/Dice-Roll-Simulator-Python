@@ -1,6 +1,6 @@
 import random
 
-def roll2Dice():
+def roll2Dice(): # function that rolls 2 dice and outputs the result
     dice1 = random.randint(1, 6)
     dice2 = random.randint(1, 6)
     sum = dice1 + dice2
@@ -8,7 +8,7 @@ def roll2Dice():
     print(f"{dice1}, {dice2} (sum: {sum})")
     return sum
 
-def menu():
+def menu(): # function to print menu text
     print("DICE ROLL SIMULATOR MENU")
     print("1. Roll Dice Once")
     print("2. Roll Dice 5 Times")
@@ -19,7 +19,7 @@ def menu():
 menu()
 
 inp = int(input("Select an option (1-5):"))
-while(inp != 5):
+while(inp != 5): # keep displaying the menu until the user chooses 5
     print("\n")
     match inp:
         case 1:
